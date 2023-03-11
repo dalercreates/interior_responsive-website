@@ -14,7 +14,7 @@
 
     <header class="container header__container">
 
-        <nav class="header__nav">
+        <nav id="nav" class="nav header__nav">
             <div class="nav__logo">
                 <a href="#">This Interior</a>
             </div>
@@ -24,11 +24,13 @@
                 <li><a class="nav__menu-item" href="#">About</a></li>
                 <li><a class="nav__menu-item" href="#">Contact</a></li>
             </ul>
-            <div class="nav__burger-btn">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
+            <button class="hamburger-button" id="hamburger-button" onclick="toggleNavigation">
+                <div class="nav__burger-btn">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </button>
         </nav>
 
     </header>
@@ -81,5 +83,7 @@
         </div>
     </footer>
     
+
+    <script src="script.js"></script>
 </body>
 </html>
